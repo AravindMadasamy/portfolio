@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Aravind M | Full Stack Developer – SaaS, IoT & Business Automation</title>
+    <meta name="description" content="Aravind M is a Full Stack Developer specializing in SaaS applications, IoT systems, and business automation tools. Explore projects, skills, and portfolio." />
+    <meta name="keywords" content="Aravind M, full stack developer, SaaS developer, IoT developer, web developer portfolio, React, Node.js, PHP, business automation" />
+    <meta name="author" content="Aravind M" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Aravind M | Full Stack Developer Portfolio" />
+    <meta property="og:description" content="Full Stack Developer specializing in SaaS, IoT & Business Automation." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aravind-dev.vercel.app/" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aravind M | Full Stack Developer" />
+    <meta name="twitter:description" content="SaaS Developer | IoT Developer | Business Automation Builder" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===================== CUSTOM CURSOR ===================== -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- ===================== PRELOADER ===================== -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <span class="loader-text">AM</span>
+        </div>
+    </div>
+
+    <!-- ===================== PARTICLES ===================== -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" id="nav-logo">&lt;Aravind /&gt;</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg">
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="hero-glow hero-glow-3"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-greeting reveal">Hello, I'm</p>
+            <h1 class="hero-name reveal">Aravind M</h1>
+            <div class="hero-title reveal">
+                <span class="hero-title-prefix">I'm a </span>
+                <span class="typed-text" id="typed-text"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-description reveal">
+                I build scalable SaaS applications, IoT systems, and business automation tools 
+                using modern web technologies.
+            </p>
+            <div class="hero-cta reveal">
+                <a href="#projects" class="btn btn-primary" id="btn-view-projects">
+                    <span class="btn-icon"><i class="fa-solid fa-rocket"></i></span> View Projects
+                </a>
+                <a href="assets/Aravind_Resume.pdf" class="btn btn-secondary" id="btn-download-resume" download>
+                    <span class="btn-icon"><i class="fa-solid fa-file-pdf"></i></span> Download Resume
+                </a>
+                <a href="#contact" class="btn btn-tertiary" id="btn-contact-me">
+                    <span class="btn-icon"><i class="fa-solid fa-comments"></i></span> Contact Me
+                </a>
+            </div>
+            <div class="hero-tech-icons reveal">
+                <div class="tech-icon" title="HTML5" style="--delay: 0s;">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="tech-icon" title="CSS3" style="--delay: 0.2s;">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="tech-icon" title="JavaScript" style="--delay: 0.4s;">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="tech-icon" title="React" style="--delay: 0.6s;">
+                    <i class="fa-brands fa-react"></i>
+                </div>
+                <div class="tech-icon" title="Node.js" style="--delay: 0.8s;">
+                    <i class="fa-brands fa-node-js"></i>
+                </div>
+                <div class="tech-icon" title="PHP" style="--delay: 1s;">
+                    <i class="fa-brands fa-php"></i>
+                </div>
+                <div class="tech-icon" title="MySQL" style="--delay: 1.2s;">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="tech-icon" title="IoT" style="--delay: 1.4s;">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p class="scroll-text">Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle">Get To Know Me</p>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal">
+                    <div class="about-image-card">
+                        <div class="about-avatar">
+                            <span class="about-avatar-icon"><i class="fa-solid fa-laptop-code"></i></span>
+                        </div>
+                        <div class="about-image-glow"></div>
+                        <div class="about-code-snippet">
+                            <code>
+                                <span class="code-keyword">const</span> <span class="code-var">developer</span> = {<br/>
+                                &nbsp;&nbsp;<span class="code-key">name</span>: <span class="code-string">"Aravind M"</span>,<br/>
+                                &nbsp;&nbsp;<span class="code-key">role</span>: <span class="code-string">"Full Stack Dev"</span>,<br/>
+                                &nbsp;&nbsp;<span class="code-key">passion</span>: <span class="code-string">"Building SaaS"</span>,<br/>
+                                &nbsp;&nbsp;<span class="code-key">loves</span>: <span class="code-string">"Clean Code"</span><br/>
+                                };
+                            </code>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <h3>A Passionate Developer Building Real-World Solutions</h3>
+                    <p>
+                        I'm a motivated Full-Stack Developer specializing in SaaS application development, 
+                        business automation systems, and scalable web solutions. With a strong foundation in 
+                        PHP, MySQL, React.js, Node.js, and modern JavaScript, I thrive on transforming complex 
+                        business requirements into elegant, production-ready applications.
+                    </p>
+                    <p>
+                        My journey spans from building comprehensive billing platforms to developing IoT-based 
+                        monitoring systems. I'm passionate about solving real-world business problems through 
+                        technology, with a focus on scalable architecture, clean code, and modern product development 
+                        practices. Currently pursuing my Master's in Computer Science while actively building 
+                        production-grade SaaS products.
+                    </p>
+                    <div class="about-tags">
+                        <span class="about-tag">Problem Solver</span>
+                        <span class="about-tag">Product Thinker</span>
+                        <span class="about-tag">SaaS Builder</span>
+                        <span class="about-tag">IoT Developer</span>
+                        <span class="about-tag">Clean Code Advocate</span>
+                        <span class="about-tag">Team Player</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Stats -->
+            <div class="stats-grid reveal">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Technologies Used</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="2">0</div>
+                    <div class="stat-label">SaaS Products Built</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-label">IoT Systems Developed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle">My Expertise</p>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-categories">
+                <!-- Frontend -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon" style="--icon-gradient: linear-gradient(135deg, #7c3aed, #a855f7);">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <h3 class="skill-category-title">Frontend Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React.js</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Tailwind CSS</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon" style="--icon-gradient: linear-gradient(135deg, #06b6d4, #22d3ee);">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h3 class="skill-category-title">Backend Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Express.js</span>
+                                <span class="skill-percentage">78%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="78"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">REST APIs</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Database -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon" style="--icon-gradient: linear-gradient(135deg, #10b981, #34d399);">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="skill-category-title">Database</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQLite</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon" style="--icon-gradient: linear-gradient(135deg, #f59e0b, #fbbf24);">
+                            <i class="fa-solid fa-toolbox"></i>
+                        </div>
+                        <h3 class="skill-category-title">Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">GitHub</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">VS Code</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Postman</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">FileZilla</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- IoT -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon" style="--icon-gradient: linear-gradient(135deg, #ef4444, #f97316);">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h3 class="skill-category-title">IoT & Hardware</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">ESP32</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Servo Motor</span>
+                                <span class="skill-percentage">78%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="78"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">IR Sensor</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">LCD Display</span>
+                                <span class="skill-percentage">76%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="76"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS SECTION ===================== -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle">My Work</p>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="sectstat"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: BillMint -->
+                <div class="project-card reveal">
+                    <div class="project-card-image" style="--project-gradient: linear-gradient(135deg, #7c3aed22, #06b6d422);">
+                        <div class="project-card-icon"><i class="fa-solid fa-credit-card"></i></div>
+                        <div class="project-card-overlay">
+                            <button class="btn btn-primary project-view-btn" data-project="billmint" id="btn-view-billmint">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <h3 class="project-card-title">BillMint</h3>
+                        <p class="project-card-subtitle">SaaS Billing Platform</p>
+                        <p class="project-card-description">
+                            A scalable SaaS-based billing and business management platform supporting multiple 
+                            business categories with invoice generation, customer management, dashboards, and 
+                            authentication workflows.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SaaS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2: IoT System -->
+                <div class="project-card reveal">
+                    <div class="project-card-image" style="--project-gradient: linear-gradient(135deg, #10b98122, #06b6d422);">
+                        <div class="project-card-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <div class="project-card-overlay">
+                            <button class="btn btn-primary project-view-btn" data-project="iot" id="btn-view-iot">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <h3 class="project-card-title">IoT Monitoring & Automation</h3>
+                        <p class="project-card-subtitle">Smart IoT System</p>
+                        <p class="project-card-description">
+                            A comprehensive IoT-based monitoring and automation system integrating ESP32 
+                            microcontroller with servo motors, IR sensors, and LCD displays for real-time 
+                            monitoring and automated control workflows.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">ESP32</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Sensors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECT MODAL ===================== -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div id="modal-body">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== EXPERIENCE SECTION ===================== -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle">My Journey</p>
+                <h2 class="section-title">Experience & Education</h2>
+                <div class="sect10"></div>
+            </div>
+            <div class="timeline">
+                <!-- Timeline item 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026 – Present</span>
+                        <h3 class="timeline-title">Freelance SaaS Developer</h3>
+                        <p class="timeline-role">Full-Stack SaaS Developer – BillMint</p>
+                        <div class="timeline-text">
+                            <ul>
+                                <li>Built scalable billing and business automation systems</li>
+                                <li>Developed production-ready SaaS applications using PHP, MySQL & JavaScript</li>
+                                <li>Improved business workflows using automation and smart dashboards</li>
+                                <li>Created customizable billing solutions for multiple industries</li>
+                                <li>Managed end-to-end development, deployment, and feature enhancements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Timeline item 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 – 2025</span>
+                        <h3 class="timeline-title">Academic IoT Developer</h3>
+                        <p class="timeline-role">IoT & Full-Stack Developer</p>
+                        <div class="timeline-text">
+                            <ul>
+                                <li>Developed IoT systems using ESP32 and various sensors</li>
+                                <li>Integrated hardware with full-stack web applications</li>
+                                <li>Built real-time monitoring dashboards with React.js</li>
+                                <li>Implemented backend APIs with Node.js and SQLite</li>
+                                <li>Demonstrated real-time IoT monitoring and automation workflows</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Timeline item 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 – 2026</span>
+                        <h3 class="timeline-title">Master's in Computer Science</h3>
+                        <p class="timeline-role">Government Arts College (Autonomous), Kumbakonam</p>
+                        <div class="timeline-text">
+                            <ul>
+                                <li>Advanced studies in software engineering and system architecture</li>
+                                <li>Focus on SaaS product development and scalable systems</li>
+                                <li>Research in IoT, embedded systems, and web technologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Timeline item 4 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 – 2024</span>
+                        <h3 class="timeline-title">Bachelor's in Computer Science</h3>
+                        <p class="timeline-role">Government Arts College (Autonomous), Kumbakonam</p>
+                        <div class="timeline-text">
+                            <ul>
+                                <li>Foundation in programming, data structures, and algorithms</li>
+                                <li>Hands-on experience in web development and database management</li>
+                                <li>Built foundational skills in frontend, backend, and database architecture</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle">What I Offer</p>
+                <h2 class="section-title">My Services</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon" style="--service-gradient: linear-gradient(135deg, #7c3aed, #a855f7);">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="service-title">SaaS Application Development</h3>
+                    <p class="service-description">
+                        Building scalable, multi-tenant SaaS platforms with robust authentication, 
+                        billing systems, and modern architecture for businesses of all sizes.
+                    </p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon" style="--service-gradient: linear-gradient(135deg, #06b6d4, #22d3ee);">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Full Stack Web Development</h3>
+                    <p class="service-description">
+                        End-to-end web application development using modern technologies including 
+                        React.js, Node.js, PHP, and MySQL with responsive, performant designs.
+                    </p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon" style="--service-gradient: linear-gradient(135deg, #10b981, #34d399);">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3 class="service-title">Business Automation Software</h3>
+                    <p class="service-description">
+                        Custom automation solutions that streamline business operations, reduce 
+                        manual effort, and improve workflow efficiency with smart dashboards.
+                    </p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon" style="--service-gradient: linear-gradient(135deg, #f59e0b, #fbbf24);">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="service-title">Billing Software Development</h3>
+                    <p class="service-description">
+                        Comprehensive billing and invoicing solutions with PDF generation, 
+                        customer management, and multi-business support for various industries.
+                    </p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon" style="--service-gradient: linear-gradient(135deg, #ef4444, #f97316);">
+                        <i class="fa-solid fa-circle-nodes"></i>
+                    </div>
+                    <h3 class="service-title">IoT System Development</h3>
+                    <p class="service-description">
+                        IoT-based monitoring and automation systems integrating hardware components 
+                        like ESP32 with web dashboards for real-time control and data visualization.
+                    </p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon" style="--service-gradient: linear-gradient(135deg, #ec4899, #f472b6);">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">Responsive UI Design</h3>
+                    <p class="service-description">
+                        Modern, responsive user interfaces with premium aesthetics, smooth 
+                        animations, and intuitive user experiences across all devices and platforms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-subtitle">Get In Touch</p>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3 class="contact-heading">Let's Work Together</h3>
+                    <p class="contact-text">
+                        I'm always interested in new projects, freelance work, and collaboration 
+                        opportunities. Whether you need a SaaS application, business automation tool, 
+                        or a complete web solution — let's build something amazing together.
+                    </p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:aravindmadasamy25@gmail.com">aravindmadasamy25@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+918489189183">+91 8489189183</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Pandanallur, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/aravindmadasamy" target="_blank" rel="noopener noreferrer" class="social-link" id="social-github" title="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aravindmadasamy/" target="_blank" rel="noopener noreferrer" class="social-link" id="social-linkedin" title="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://wa.me/918489189183" target="_blank" rel="noopener noreferrer" class="social-link" id="social-whatsapp" title="WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                        <a href="mailto:aravindmadasamy25@gmail.com" class="social-link" id="social-email" title="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="form-name">Your Name</label>
+                            <input type="text" id="form-name" name="name" placeholder="John Doe" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Your Email</label>
+                            <input type="email" id="form-email" name="email" placeholder="john@example.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" name="subject" placeholder="Project Discussion" />
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Your Message</label>
+                            <textarea id="form-message" name="message" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit" id="btn-submit-form">
+                            <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#hero" class="footer-logo">&lt;Aravind /&gt;</a>
+            <p class="footer-text">Full Stack Developer | SaaS Builder | IoT Developer</p>
+            <p class="footer-copyright">&copy; 2026 Aravind M. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button class="back-to-top" id="back-to-top" title="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
